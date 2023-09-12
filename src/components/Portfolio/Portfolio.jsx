@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './Portfolio.css'
+import $ from 'jquery'
 
 
 
@@ -7,11 +8,19 @@ import './Portfolio.css'
 
 export default class Portfolio extends Component {
 
+//   getDisplay(e){
+//     let cardImg = e.target.src;
+//     console.log(cardImg);
+//     document.querySelector('.documentLayer').classList.remove('d-none')
+//     document.querySelector('.documentLayer').innerHTML = `<img src="${cardImg}" alt="" class=' rounded-2 w-50'/>`;
+//   }
   getDisplay(e){
-    let cardImg = e.target.src;
-    console.log(cardImg);
+    let cardImg = e.target; 
+    let cardExactImg = $(cardImg).next().get();
+    console.log(cardExactImg[0].src);
+    // let cardExactPerfectImg = cardExactImg[0]
     document.querySelector('.documentLayer').classList.remove('d-none')
-    document.querySelector('.documentLayer').innerHTML = `<img src="${cardImg}" alt="" class=' rounded-2 w-50'/>`;
+    document.querySelector('.documentLayer').innerHTML = `<img src="${cardExactImg[0].src}" alt="" class=' rounded-2 w-50'/>`;
   }
 
   getDisappear(e){
@@ -47,42 +56,60 @@ export default class Portfolio extends Component {
 
                     <div onClick={this.getDisplay} className='col-lg-4 col-md-6'>
                         <div className=" inner position-relative overflow-hidden">
-                            <img   src="images/poert1.png" alt="" className=' rounded-2 w-100'/>
-                            {/* <div className="layer">
-                                <img   src="images/poert1.png" alt="" className='d-none rounded-2 w-100'/>
+                            <div  className="myLastLayer">
+                                <div className="layer"><i class="fa-solid fa-plus"></i></div>
+                                <img   src="images/poert1.png" alt="" className=' rounded-2 w-100'/>
+                            </div>
+                        </div>
+                    </div>
+                    <div onClick={this.getDisplay} className='col-lg-4 col-md-6'>
+                        <div className="inner position-relative overflow-hidden">
+                            <div className="myLastLayer">
+                                <div className="layer"><i class="fa-solid fa-plus"></i></div>
 
-                                <i class="fa-solid fa-plus"></i>
-                            </div> */}
+                                <img src="images/port2.png" alt="" className=' rounded-2 w-100'/>
+                            </div>
+                           
                         </div>
                     </div>
                     <div onClick={this.getDisplay} className='col-lg-4 col-md-6'>
                         <div className="inner position-relative overflow-hidden">
-                            <img src="images/port2.png" alt="" className=' rounded-2 w-100'/>
-                            {/* <div className="layer"><i class="fa-solid fa-plus"></i></div> */}
+                            <div className="myLastLayer">
+                                <div className="layer"><i class="fa-solid fa-plus"></i></div>
+
+                                <img src="images/port3.png" alt="" className=' rounded-2 w-100'/>
+                            </div>
+                            
                         </div>
                     </div>
                     <div onClick={this.getDisplay} className='col-lg-4 col-md-6'>
                         <div className="inner position-relative overflow-hidden">
-                            <img src="images/port3.png" alt="" className=' rounded-2 w-100'/>
-                            {/* <div className="layer"><i class="fa-solid fa-plus"></i></div> */}
+                            <div className="myLastLayer">
+                                <div className="layer"><i class="fa-solid fa-plus"></i></div>
+
+                                <img src="images/poert1.png" alt="" className=' rounded-2 w-100'/>
+                            </div>
+                            
                         </div>
                     </div>
                     <div onClick={this.getDisplay} className='col-lg-4 col-md-6'>
                         <div className="inner position-relative overflow-hidden">
-                            <img src="images/poert1.png" alt="" className=' rounded-2 w-100'/>
-                            {/* <div className="layer"><i class="fa-solid fa-plus"></i></div> */}
+                            <div className="myLastLayer">
+                                <div className="layer"><i class="fa-solid fa-plus"></i></div>
+
+                                <img src="images/port2.png" alt="" className=' rounded-2 w-100'/>
+                            </div>
+                            
                         </div>
                     </div>
                     <div onClick={this.getDisplay} className='col-lg-4 col-md-6'>
                         <div className="inner position-relative overflow-hidden">
-                            <img src="images/port2.png" alt="" className=' rounded-2 w-100'/>
-                            {/* <div className="layer"><i class="fa-solid fa-plus"></i></div> */}
-                        </div>
-                    </div>
-                    <div onClick={this.getDisplay} className='col-lg-4 col-md-6'>
-                        <div className="inner position-relative overflow-hidden">
-                            <img src="images/port3.png" alt="" className=' rounded-2 w-100'/>
-                            {/* <div className="layer"><i class="fa-solid fa-plus"></i></div> */}
+                            <div className="myLastLayer">
+                                <div className="layer"><i class="fa-solid fa-plus"></i></div>
+
+                                <img src="images/port3.png" alt="" className=' rounded-2 w-100'/>
+                            </div>
+                           
                         </div>
                     </div>
 
