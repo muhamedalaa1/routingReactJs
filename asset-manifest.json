@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/routingReactJs/static/css/main.140c59dc.css",
-    "main.js": "/routingReactJs/static/js/main.f52967bc.js",
+    "main.js": "/routingReactJs/static/js/main.501bc5b1.js",
     "static/js/787.85d565d8.chunk.js": "/routingReactJs/static/js/787.85d565d8.chunk.js",
     "static/media/fa-solid-900.ttf": "/routingReactJs/static/media/fa-solid-900.d75e3fd1eb12e9bd6655.ttf",
     "static/media/fa-brands-400.ttf": "/routingReactJs/static/media/fa-brands-400.016b4a6cdced82ab3aa1.ttf",
@@ -13,11 +13,11 @@
     "static/media/fa-v4compatibility.woff2": "/routingReactJs/static/media/fa-v4compatibility.1bac2991f3dbfa237aec.woff2",
     "index.html": "/routingReactJs/index.html",
     "main.140c59dc.css.map": "/routingReactJs/static/css/main.140c59dc.css.map",
-    "main.f52967bc.js.map": "/routingReactJs/static/js/main.f52967bc.js.map",
+    "main.501bc5b1.js.map": "/routingReactJs/static/js/main.501bc5b1.js.map",
     "787.85d565d8.chunk.js.map": "/routingReactJs/static/js/787.85d565d8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.140c59dc.css",
-    "static/js/main.f52967bc.js"
+    "static/js/main.501bc5b1.js"
   ]
 }
