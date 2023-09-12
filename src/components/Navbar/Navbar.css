@@ -1,0 +1,21 @@
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: unset;
+    align-items: center;
+}
+
+.navbarContainer{
+    
+    color: #fff ;
+   background-color:#2C3E50;
+}
+.navbarContainer nav{
+
+   background-color:#2C3E50 ;
+}
+
+.active{
+    border: 1px solid #1ABC9C;
+    background-color: #1ABC9C ;
+    border-radius: 6px;
+}

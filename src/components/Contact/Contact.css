@@ -1,0 +1,46 @@
+
+/* .myContactInfo{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+} */
+.myContactInfo button{
+    width: fit-content;
+}
+.myContactInfo {
+    padding: 150px 0;
+}
+
+.contactH2{
+    width: fit-content;
+    margin: auto;
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+}
+
+
+.contactH2::before{
+    content: "";
+position: absolute;
+bottom: -10px;
+left: 50%;
+transform: translateX(-50%);
+background-color:#000 ;
+height: 3px;
+width: 80%;
+
+}
+.contactH2::after{
+    content: "\f005";
+    font-family: "Font Awesome 6 free";
+    font-weight: 900;
+    position: absolute;
+    bottom: -23px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 0 20px;
+    color: #000;
+}

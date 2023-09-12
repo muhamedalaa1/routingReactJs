@@ -1,0 +1,50 @@
+/* body{
+
+    color: #fff;
+background-color: #1ABC9C;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+} */
+
+.myAbout{
+
+background-color: #1ABC9C;
+padding: 105px 0;
+
+}
+.AboutH2{
+
+    width: fit-content;
+    margin: auto;
+    position: relative;
+    margin-bottom: 20px;
+        padding-bottom: 15px;
+}
+.AboutH2::before{
+    content: "";
+position: absolute;
+bottom: -10px;
+left: 50%;
+transform: translateX(-50%);
+background-color:#fff ;
+height: 3px;
+width: 80%;
+
+}
+.AboutH2::after{
+    content: "\f005";
+    font-family: "Font Awesome 6 free";
+    font-weight: 900;
+    position: absolute;
+    bottom: -23px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1ABC9C;
+    padding: 0 20px;
+
+
+
+
+}
